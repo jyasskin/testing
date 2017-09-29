@@ -7,7 +7,13 @@ script:
 
 deploy:
   provider: pages
+  edge:
+    source: jyasskin/dpl
+    branch: github-deploy-token
   skip_cleanup: true
   on:
     branch: master
   local_dir: out
+  deploy_key: deploy_key.enc
+  deploy_key_key: $encrypted_b5885cd851c3_key
+  deploy_key_iv: $encrypted_b5885cd851c3_iv
