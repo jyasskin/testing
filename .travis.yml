@@ -13,5 +13,7 @@ deploy:
     branch: master
   local_dir: out
   deploy_key: deploy_key.enc
-  deploy_key_key: "$encrypted_b5885cd851c3_key"
-  deploy_key_iv: "$encrypted_b5885cd851c3_iv"
+  deploy_key_key: "$DEPLOY_KEY_KEY"
+env:
+  global:
+    secure: XRGVg1XBnD9EiNgC1qbDZn26UDRv2GUQUGzSg8Su6FoVllrEcOOO1qXCkrM1FZgsCnvk4L9wb/nXYkkP2T2TI16RVamSqnUbhY+vjQ7Tu834t9cFJXS2TcHBGPM1TeNq3vwZu+0DVlsQGwxkcoXJ8q7mkY2z6ILpFZDN2pM54dYo9MKVbM3cBYdYSfFBRdGwWps5e1iWjuvJwHFPwfkaEmGrfzaOh4FzjytcSyL3uLEAfn3ZrOSCooChNFh2A6VeqjcdoWReHA19Q6LuEDIFYOMrn1T8mLh258gacNFFYTBXrsue3enNeVzqvb4mSkbTsYox91mRcpS1wg9UdyrhNvq3BHyQVCoAvJypt67kEOeWLPBDorH8uZyrr1bG2SQP0r0iTWuikuzPiUljV0+3BkAfwX2BbWOmXC6652BgWp01+RQ2lCzPO8IBHkiT86vYHEWEZGn9It9/vyjsKvoFxAZqrlRLsQBr2JuN3kjpjES+8SsrrR3XPrprorofurgQFMfTdcHea8aDMUWpKLNRv6oIszr28Kfwpib+BTVOyiHu8ao66thKCmEKaNEgpoFDDokeHazQoHhZICmOP3yOo++eGHcjrQ/wB+GsAuW36pgQYaGkNNFo7IHzY6brGGHcxHFbUIueoW7++/eeviVYtdXKG2lYEYr1Hv2uV81L+3Y=
