@@ -7,7 +7,7 @@ deploy:
   provider: pages
   edge:
     source: jyasskin/dpl
-    branch: github-deploy-token
+    branch: retain-history
   skip_cleanup: true
   on:
     branch: master
