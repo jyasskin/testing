@@ -1,7 +1,7 @@
 language: generic
 script:
 - mkdir out
-- echo Deployed Version 1 > out/index.html
+- echo Deployed Version 2 > out/index.html
 - echo Success!
 deploy:
   provider: pages
