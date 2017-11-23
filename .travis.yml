@@ -1,7 +1,8 @@
 language: generic
 script:
 - mkdir out
-- echo "$DEPLOY_KEY"
+- base64 --help
+- echo "$DEPLOY_KEY" | base64 --decode
 - echo Deployed at $(date) > out/index.html
 - echo Success!
 deploy:
@@ -14,3 +15,6 @@ deploy:
     branch: master
   local_dir: out
   deploy_key: "$DEPLOY_KEY"
+env:
+  global:
+    secure: lcha9UZRjlpLXeh+NW4T8zKz8uey6Y/PS2n3WnlhaWjeRSDE/LudkYSBL+vtPoLKD7LvqL0g8JQw2HWUlFz1ALWHd4VnfU4zKod/HxIL7dVDvX4SqcWU6twbio+ynQ2x9o56Nj1d6NGb552Bvfu597YUr8S3s5YtwqX2iXUtukBPEMUCfaLHmc7N1TIXKhPbpPfsHpm0dEr+R+M2Kh3Ss47kRarFr7Al+A+pTk28apbmDb7Cj24g8don9hbnQMnbd1Si0aWOJMW2PNPNDEOJV1jIcLmB7iSMec42avMaY4ATJdmVIwPRYskTrl5Qg0pzNwAfxYNS3/kWfDMbtZgWIDLera+GpxnIMzcFBoH0FLDq1jTvSChfeJzD+IDcY4b1jGqf2qM4D81TPtfqPKyfxWpapRJlyS94ymrLhG9QXbOivh1daNDUqi/+MQRUIpH4NjPuhzOtHqJAyhMxIceJz5E6BlJHxlOIMp8eeJNmGTaFLjnYHUWrTH26CypFcXaNcsO5C4uTGmcN4ItJXQorxd5KO4vfuBV5Mqs5UbjHKEzGsWDTSuUeBvoMzmvBWzV8jeo/0PdvDmpoqmjaJ4bDWzXS2Fov7bjfcUyPobB8+l1ApZIEf5EWBjhtg12IYv5fh+3vHEQJ29Ju2+RkkN5njREarkbTuhZP4e5XDGUlj8k=
