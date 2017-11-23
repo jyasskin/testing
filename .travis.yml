@@ -1,19 +1,19 @@
 language: generic
 script:
 - mkdir out
-- echo Deployed Version 2 > out/index.html
+- echo "$DEPLOY_KEY"
+- echo Deployed at $(date) > out/index.html
 - echo Success!
 deploy:
   provider: pages
   edge:
     source: jyasskin/dpl
-    branch: retain-history
+    branch: github-deploy-token
   skip_cleanup: true
   on:
     branch: master
   local_dir: out
-  deploy_key: deploy_key.enc
-  deploy_key_key: "$DEPLOY_KEY_KEY"
+  deploy_key: "$DEPLOY_KEY"
 env:
   global:
-    secure: XRGVg1XBnD9EiNgC1qbDZn26UDRv2GUQUGzSg8Su6FoVllrEcOOO1qXCkrM1FZgsCnvk4L9wb/nXYkkP2T2TI16RVamSqnUbhY+vjQ7Tu834t9cFJXS2TcHBGPM1TeNq3vwZu+0DVlsQGwxkcoXJ8q7mkY2z6ILpFZDN2pM54dYo9MKVbM3cBYdYSfFBRdGwWps5e1iWjuvJwHFPwfkaEmGrfzaOh4FzjytcSyL3uLEAfn3ZrOSCooChNFh2A6VeqjcdoWReHA19Q6LuEDIFYOMrn1T8mLh258gacNFFYTBXrsue3enNeVzqvb4mSkbTsYox91mRcpS1wg9UdyrhNvq3BHyQVCoAvJypt67kEOeWLPBDorH8uZyrr1bG2SQP0r0iTWuikuzPiUljV0+3BkAfwX2BbWOmXC6652BgWp01+RQ2lCzPO8IBHkiT86vYHEWEZGn9It9/vyjsKvoFxAZqrlRLsQBr2JuN3kjpjES+8SsrrR3XPrprorofurgQFMfTdcHea8aDMUWpKLNRv6oIszr28Kfwpib+BTVOyiHu8ao66thKCmEKaNEgpoFDDokeHazQoHhZICmOP3yOo++eGHcjrQ/wB+GsAuW36pgQYaGkNNFo7IHzY6brGGHcxHFbUIueoW7++/eeviVYtdXKG2lYEYr1Hv2uV81L+3Y=
+    secure: BeBw1QR/SibThrnABvx/JdGz3j/orKHFyGRgJv1ECzUVxSB8sFuPNbtGIuTQMYR30ao7tHzSun4H3vLksNhIqXCW+jAxiJuFuwwfRSIquvlmub0qKRK0D3M4xAvIlj6VXvH3LAGjQpzG/wwznn/s9iIZHQdTd/5NphOUqRZ1m0tnHvy0ZA06VSoR92Rv56D5opsXVcxVpOcWaIpC/FxHRBTlbzguiYQhi/HTL9RrVnSsFkrF1BJIZ+y+eFwht3UBT2PV0H3yA9+BJ//F/6vJaxBHXfAYJqzLDntog4QN36zJ9zS5wK8ZP/zl9sM2Eyhb0sJGp/h74bkQvYNy6uDm+9laE2tk8RVwKLw4A/RBRGGMd0GzS+G4N0j/xGMuW89GMQ48e+hZ9fSFpLxv6uo1IGEhzR1uUfu47Z+XfY297zgZHZG/qk98kFmAwq0COJsH9MVWUCl6+4TuXW5VTjsO5Vvb21HY3egqeawF9LCRvn7KfLSU3nE6CPzFetMr29CC9RIkWjkoQT0Ta9Q5SlaZMPWLE7nukekfmsgh1VLf5kJAbwqrfnuz8+iqkh/gNv23pgyuSKsotjVCBqQFrF/pT3WPQr4j8JxqmH5RSxG3bzA7Q4PJFK2cYcTHSMs9Lg2dTzloxqh3turljD24yt9LrbXTF8bSAslyz1lkmPDP/I8=
