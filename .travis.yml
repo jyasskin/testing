@@ -1,8 +1,6 @@
 language: generic
 script:
 - mkdir out
-- base64 --help
-- echo "$DEPLOY_KEY" | base64 --decode
 - echo Deployed at $(date) > out/index.html
 - echo Success!
 deploy:
@@ -14,7 +12,7 @@ deploy:
   on:
     branch: master
   local_dir: out
-  deploy_key: "$DEPLOY_KEY"
+  deploy_key_base64: "$DEPLOY_KEY"
 env:
   global:
-    secure: lcha9UZRjlpLXeh+NW4T8zKz8uey6Y/PS2n3WnlhaWjeRSDE/LudkYSBL+vtPoLKD7LvqL0g8JQw2HWUlFz1ALWHd4VnfU4zKod/HxIL7dVDvX4SqcWU6twbio+ynQ2x9o56Nj1d6NGb552Bvfu597YUr8S3s5YtwqX2iXUtukBPEMUCfaLHmc7N1TIXKhPbpPfsHpm0dEr+R+M2Kh3Ss47kRarFr7Al+A+pTk28apbmDb7Cj24g8don9hbnQMnbd1Si0aWOJMW2PNPNDEOJV1jIcLmB7iSMec42avMaY4ATJdmVIwPRYskTrl5Qg0pzNwAfxYNS3/kWfDMbtZgWIDLera+GpxnIMzcFBoH0FLDq1jTvSChfeJzD+IDcY4b1jGqf2qM4D81TPtfqPKyfxWpapRJlyS94ymrLhG9QXbOivh1daNDUqi/+MQRUIpH4NjPuhzOtHqJAyhMxIceJz5E6BlJHxlOIMp8eeJNmGTaFLjnYHUWrTH26CypFcXaNcsO5C4uTGmcN4ItJXQorxd5KO4vfuBV5Mqs5UbjHKEzGsWDTSuUeBvoMzmvBWzV8jeo/0PdvDmpoqmjaJ4bDWzXS2Fov7bjfcUyPobB8+l1ApZIEf5EWBjhtg12IYv5fh+3vHEQJ29Ju2+RkkN5njREarkbTuhZP4e5XDGUlj8k=
+    secure: JprW1DlkwucHaBBeK1q6A+x9rsiArkc1WOf5qd9tQjFt4eUjx6AfTHVWLIf2eHq5rIuJxV68//iD5bwVlMCqhCAg8Z/+YWLSFrKpgdErckdQ2Y3O0TZ4mixiVjvBUu01cQnJmwhDZd1LLSCy/i5ppPwt5k1gvjtQtUweAfeKngFQkunRV/0AASJkkirpUZMl0tmh6EhXpPvLszfRmWHDuQURfel9JsSSOaTcqg2D1jsKvdd8CvGBRWIIcTzsWhlhwYh6aSjN3dIR84HpiJCcHP6cOmY2G+Q1OD0eYIkF+SMO8kyIG0I5E1vLif/D18vss8f0vrennpb/szoPZhifqz3QIM14/m8nN+sw6jys7tLoRYhOs5DK9NILb/vpopJ8SK7bi5JFtXOeKVWlDX4X5dwFmhwl/fM1orrKGrpcaeRg3aU66TyRhvD1F8ofVik7pUHlLfsaBMGOk/cww8EEkJYPpy+EtCeBThoyIp+uqDLyMEH2iCSrV1YX+VTjXcSCTUurdR/8p7blvMsRYsaaYdqMRndD6H9Gy2JMzNBroOVvx/XsPtGH6UPMG8WWnjoQzWi19lbJDPbgjsuWkmLRKudgSC40cBxPRYUb4GIEH6VOl66+fXE8RmpcmzKmZQ6gKi78On0a5xgCQjUm+3+23XZULomijlHl/1R7nLFVVxc=
