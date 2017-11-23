@@ -14,6 +14,3 @@ deploy:
     branch: master
   local_dir: out
   deploy_key: "$DEPLOY_KEY"
-env:
-  global:
-    secure: DkPJuCbnYyBpo3MJM/5idjahXy0/PBqaKnM6FeXIvjgCSTLjhFfL8+ZT23BT65kvGfL5DsuQRf5NiRni0SI0AjmrjgzlZ6WBlhY6e3Y/nSelVFVo5a/3xG/HqkCNbEB1jSYebW1ivYutFxGvqFLgxcnrOXHKlXWTwlPd4hgFK/f1i4J2eEpe6OWPIN3UlOgssA2i+toL+7l3lbSnv09Qn8K/Z2nhZrLfzpx7CRQj54oU+ZbigerByw5tY2wbnibxtHYqsaPlADXHUji0XFjDheQnoZ/OXxkLil69uKdXKXOg2d7N3BjGHvBy7/mQE8VY6rOh2aE1q0XaSQ8x4txkGGR6bPuLzjHxXNyiUoqk0akGLhBBD75MHdGugLAa+Me9nM2jPu0DH9dqzx9tb/c2QwkuHRhM701imGVu+dA81zpWReI7of698vXS5TSM61Lvu0Y/V3uMVIQnr4RhEhTA2Yvnm7g22ZK95mebHb44Oxhx+Rw0gmASbLTAvTSSmnX+2M8QAAamQH4u4/fSK/n2B8oawDbyrGhsIuCfoq6lntLWCNGNPJayT6IW8AAT1MqgrIIVK5lePBXEFvgtwwZSTTH3Y6oeyAiSg9R0wk5/otrJzeuIa9/SX+PbrnN/wRSUWT2vloAnDPOxUzCnOr3u/i6tgU3DiqTVOJ/+xWoja/I=
