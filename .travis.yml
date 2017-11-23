@@ -12,7 +12,7 @@ deploy:
   on:
     branch: master
   local_dir: out
-  deploy-key: "$DEPLOY_KEY"
+  deploy_key: "$DEPLOY_KEY"
 env:
   global:
     secure: Qb4WxzXIiIUm6vjoKrdEdLakGoxjYNeyAoSMnWQIZgv+E/dlA3Eavg7SJkIF2x8j9DAvtE94I6urHCaJhy/wfRTeZJhgFn0MBo6oma1TmEi3bK/DZNQtF7tZS6n/51FQvph2vSfv49gq9hdS0ce1fwp6TohuM1cxqZawwMrsvJtvHvKsHqlCQGhvfzm8F3ANdBM0BCLQGaewQxothf1i75SGnYYu/nwjd1zhKtLhlhchlG8OgNoZ8rPFDvLds8rXc2WjptbYgsNw9Ta3TgHvAVURR0Tpy06shc816EUwLOpj6Y+JSXs5t1+siDSsOVqlJ49wCq335QarI6iJbGhSux9LP+Fj+wMcdSZnn4G38bNqk4SJUMvK95u8r/p4lyCyt0ShKMX2eUf6sJS/kKdLlwgFNmOz56yIdaouLexlfdkjkNoAOqw4ZvnK8kZsY8Yt0rhh/HKmGeCd+KGfIoCxlt4zh+GZJRQR9zGk+JYpkuCwOyfowMKMZ9w91vtjgADX0EydQ1klIRTUPvB/M2JvFOu2GPVTZXbhzlAPG1X8JZSO+ACGH8h1j4HDj/3OmHcofa+U5X4TAcKHwy5Hqx7r4SVO07ha+jyutLmyKJkoQTtBAGVDhcdbw2QFVxBXxbhhCxjS2INvk0wDyu0ScXbi5de6ARjSbcow2iKQzf6tC7c=
