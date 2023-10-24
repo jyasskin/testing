@@ -1,4 +1,5 @@
 {
+	"type": "module",
 	"dependencies": {
 		"@octokit/core": "^5.0.1",
 		"@octokit/plugin-throttling": "^8.0.1"
