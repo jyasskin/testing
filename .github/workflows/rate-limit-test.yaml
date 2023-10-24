@@ -1,0 +1,26 @@
+name: Exceed Github Rate Limit
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Exceed Rate Limit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: latest
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install
+      - name: Scan specification repositories
+        run: node exceed-rate-limit.js
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
